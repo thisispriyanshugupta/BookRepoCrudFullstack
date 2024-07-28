@@ -1,0 +1,71 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+/target/
+*.log
+
+# Maven
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+mvnw
+mvnw.cmd
+/.mvn/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React
+/build/
+/dist/
+/.env
+
+# IDEs and editors
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+# Eclipse
+.project
+.classpath
+.settings/
+# VS Code
+.vscode/
+# Other IDEs
+*.sw?
+*~
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Windows
+*.bat
+*.cmd
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Log files
+*.log
+
+# GitHub
+.github/
