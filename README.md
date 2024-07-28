@@ -7,6 +7,7 @@ Welcome to the **Book Manager Fullstack CRUD Application**! This project is a fu
 - [Description](#description)
 - [Features](#features)
 - [Installation](#installation)
+- [Database Setup](#database-setup)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
@@ -39,9 +40,16 @@ To run this project locally, follow these steps:
     mvn clean install
     ```
 
-3. Run the Spring Boot application:
-    ```sh
-    mvn spring-boot:run
+### Database Setup
+
+1. Set up your database (e.g., MySQL, PostgreSQL). Create a new database for the application.
+
+2. Update the `application.properties` file located in `src/main/resources/` with your database configuration:
+    ```properties
+    spring.datasource.url=jdbc:your_database_url
+    spring.datasource.username=your_username
+    spring.datasource.password=your_password
+    spring.jpa.hibernate.ddl-auto=update
     ```
 
 ### Frontend (React)
@@ -56,21 +64,27 @@ To run this project locally, follow these steps:
     npm install
     ```
 
-3. Start the React application:
+## Usage
+
+1. Start the backend server by running the Spring Boot application:
+    ```sh
+    mvn spring-boot:run
+    ```
+
+2. Start the React application:
     ```sh
     npm start
     ```
 
-## Usage
+3. Open your browser and go to `http://localhost:3000` to access the frontend.
 
-1. Open your browser and go to `http://localhost:3000` to access the frontend.
-2. Use the interface to add, view, update, and delete books.
+4. Use the interface to add, view, update, and delete books.
 
 ## Technologies Used
 
 - **Backend**: Spring Boot, Maven
 - **Frontend**: React, Node.js, npm
-- **Database**: (Specify your database here, e.g., H2, MySQL, PostgreSQL)
+- **Database**: (Specify your database here, e.g., MySQL, PostgreSQL)
 - **Version Control**: Git, GitHub
 
 ## Contributing
